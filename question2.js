@@ -1,14 +1,15 @@
-function secondProgram(value) {
-  let initialArray = [4, 5, 2, 6, 1, 19, 3];
-  for(let i = 0; i < initialArray.length; i++) {
+function complementPair(complement, array) {
+  for(let i = 0; i < array.length; i++) {
     let sum = 0;
-    for(let j = i; j < initialArray.length; j++) {
-      sum += initialArray[j] + initialArray[i];
-      if(sum === value) {
-        console.log(sum);
+    for(let j = i; j < array.length; j++) {
+      sum = array[j] + array[i];
+      if(sum === complement) {
+        return [array[i], array[j]];
       }
     }
   }
+  return -1;
 }
 
-secondProgram(22);
+let pair = complementPair(0, [4, 5, 2, 6, 1, 19, 3]);
+console.log(pair);
