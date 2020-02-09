@@ -1,0 +1,14 @@
+#btn {
+    background-image: linear-gradient(to bottom, #65AB53, #588845);
+    color: #ffffff;
+    padding: 8px 60px 8px 60px;
+    border: 1px solid #3C6D22;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "arial", "sans-serif";
+    font-size: 19px;
+    box-shadow: 0 1px 0 #A0DF84 inset;
+}
+#btn:hover {
+   background-color: #63A650;
+}
